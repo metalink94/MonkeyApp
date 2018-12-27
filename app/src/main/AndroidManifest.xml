@@ -61,6 +61,12 @@
 
             </intent-filter>
         </activity>
+        <activity android:name=".screens.LvlOneActivity"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".screens.LvlTwoActivity"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".screens.LvlThreeActivity"
+                  android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
