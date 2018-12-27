@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/lvl_1_nignt">
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/monkey_3"/>
 
     <GridLayout
             android:id="@+id/gridLayout"

@@ -1,4 +1,4 @@
-package ru.monkeys.monkeyapp.screens
+package ru.monkeys.monkeyapp.screens.game
 
 import android.os.Bundle
 import ru.monkeys.monkeyapp.utils.BaseActivity

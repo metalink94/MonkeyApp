@@ -8,6 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="NoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/status_bar</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
     <style name="ButtonStyle">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@android:color/white</item>
@@ -19,6 +27,15 @@
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">16dp</item>
     </style>
+
+    <style name="AcceptButton" parent="ButtonStyle">
+        <item name="android:background">@drawable/accept_bg</item>
+    </style>
+
+    <style name="RejectButton" parent="ButtonStyle">
+        <item name="android:background">@drawable/reject_bg</item>
+    </style>
+
 
     <style name="NoUiAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@null</item>

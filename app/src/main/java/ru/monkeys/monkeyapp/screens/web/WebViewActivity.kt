@@ -1,4 +1,4 @@
-package ru.monkeys.monkeyapp.screens
+package ru.monkeys.monkeyapp.screens.web
 
 import android.Manifest
 import android.annotation.TargetApi

@@ -1,4 +1,4 @@
-package ru.monkeys.monkeyapp.screens
+package ru.monkeys.monkeyapp.screens.game
 
 import android.os.Bundle
 import android.util.DisplayMetrics
@@ -97,6 +97,6 @@ class LvlOneActivity: BaseActivity() {
     }
 
     private fun getImageResource(): Int {
-        return 0
+        return R.mipmap.ic_launcher_round
     }
 }

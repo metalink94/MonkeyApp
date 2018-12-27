@@ -1,4 +1,4 @@
-package ru.monkeys.monkeyapp.screens
+package ru.monkeys.monkeyapp.screens.deeplink
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import com.airbnb.deeplinkdispatch.DeepLink
 import com.airbnb.deeplinkdispatch.DeepLinkEntry
 import com.airbnb.deeplinkdispatch.DeepLinkUri
 import com.facebook.applinks.AppLinkData
+import ru.monkeys.monkeyapp.screens.main.SplashActivity
 import ru.monkeys.monkeyapp.utils.BaseActivity
 
 class DeepLinkActivity : BaseActivity() {

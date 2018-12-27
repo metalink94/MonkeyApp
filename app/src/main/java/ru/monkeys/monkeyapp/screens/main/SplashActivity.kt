@@ -1,4 +1,4 @@
-package ru.monkeys.monkeyapp.screens
+package ru.monkeys.monkeyapp.screens.main
 
 import android.content.Context
 import android.content.Intent
@@ -13,6 +13,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import ru.monkeys.monkeyapp.R
+import ru.monkeys.monkeyapp.screens.web.WebViewActivity
 import ru.monkeys.monkeyapp.utils.BaseActivity
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
