@@ -10,16 +10,53 @@
             android:layout_centerVertical="true"
             android:background="@drawable/monkey_3"/>
 
-    <GridLayout
-            android:id="@+id/gridLayout"
-            android:layout_width="wrap_content"
+    <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:rowCount="2"
-            android:columnCount="4"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="64dp">
+            android:orientation="vertical">
 
-    </GridLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center">
+
+            <View
+                    android:id="@+id/circle1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/circle"
+                    android:layout_marginRight="8dp"/>
+
+            <View
+                    android:id="@+id/circle2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/circle_with_corner"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+            <View
+                    android:id="@+id/circle3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/circle"
+                    android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+        <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="4"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp">
+
+        </GridLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
