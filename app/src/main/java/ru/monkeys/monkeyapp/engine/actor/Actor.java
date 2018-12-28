@@ -1,7 +1,7 @@
 package ru.monkeys.monkeyapp.engine.actor;
 
 import android.graphics.Canvas;
-import android.graphics.Paint
+import android.graphics.Paint;
 
 public abstract class Actor {
     // Defines the default paint

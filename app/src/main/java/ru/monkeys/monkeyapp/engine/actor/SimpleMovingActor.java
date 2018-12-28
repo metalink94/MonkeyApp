@@ -1,5 +1,7 @@
 package ru.monkeys.monkeyapp.engine.actor;
 
+import ru.monkeys.monkeyapp.engine.Velocity;
+
 public abstract class SimpleMovingActor extends PositionedActor {
     private Velocity velocity;
 

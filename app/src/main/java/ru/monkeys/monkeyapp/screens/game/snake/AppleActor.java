@@ -1,5 +1,11 @@
 package ru.monkeys.monkeyapp.screens.game.snake;
 
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import ru.monkeys.monkeyapp.engine.AbstractGamePanel;
+import ru.monkeys.monkeyapp.engine.actor.PositionedActor;
+
 public class AppleActor extends PositionedActor {
 
     public static final int DRAW_SIZE = 25;
@@ -11,7 +17,7 @@ public class AppleActor extends PositionedActor {
     @Override
     public void stylePaint(Paint p) {
         p.setColor(Color.RED);
-        p.setStyle(Style.FILL);
+        p.setStyle(Paint.Style.FILL);
     }
 
     @Override
