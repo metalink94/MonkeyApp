@@ -1,6 +1,7 @@
 package ru.monkeys.monkeyapp.engine.thread;
 
 import android.view.SurfaceHolder;
+import ru.monkeys.monkeyapp.engine.AbstractGamePanel;
 
 public abstract class BaseGameThread extends Thread {
     // Store references to the game panel and holder

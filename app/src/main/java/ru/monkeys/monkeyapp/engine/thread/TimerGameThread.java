@@ -2,6 +2,7 @@ package ru.monkeys.monkeyapp.engine.thread;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
+import ru.monkeys.monkeyapp.engine.AbstractGamePanel;
 
 public class TimerGameThread extends BaseGameThread {
     private int tickInterval;
