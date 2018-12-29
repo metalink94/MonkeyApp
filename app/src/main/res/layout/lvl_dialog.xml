@@ -14,21 +14,21 @@
         <ImageView
                 android:id="@+id/poor"
                 android:layout_weight="1"
-                android:layout_width="0dp"
+                android:layout_width="64dp"
                 android:layout_height="64dp"
                 app:srcCompat="@drawable/ic_star"/>
 
         <ImageView
                 android:id="@+id/nice"
                 android:layout_weight="1"
-                android:layout_width="0dp"
+                android:layout_width="64dp"
                 android:layout_height="64dp"
                 app:srcCompat="@drawable/ic_star"/>
 
         <ImageView
                 android:id="@+id/perfect"
                 android:layout_weight="1"
-                android:layout_width="0dp"
+                android:layout_width="64dp"
                 android:layout_height="64dp"
                 app:srcCompat="@drawable/ic_star"/>
 

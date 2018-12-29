@@ -7,16 +7,85 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="24dp">
 
         <TextView
-                android:layout_marginTop="24dp"
                 android:textSize="24sp"
                 android:text="Настройки"
                 android:textAllCaps="true"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:text="Поменять сложность:"
+
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+            <TextView
+                    style="@style/AcceptButton"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:textAllCaps="true"
+                    android:text="Легко"
+            />
+
+            <View android:layout_width="16dp" android:layout_height="wrap_content"/>
+
+            <TextView
+                    style="@style/ButtonStyle"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:textAllCaps="true"
+                    android:text="Средне"
+            />
+
+            <View android:layout_width="16dp" android:layout_height="wrap_content"/>
+
+            <TextView
+                    style="@style/RejectButton"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:textAllCaps="true"
+                    android:text="Тяжело"
+            />
+
+        </LinearLayout>
+
+        <TextView
+                android:text="Ваш нинейм:"
+                android:textSize="14sp"
+                android:layout_marginTop="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:layout_marginTop="8dp"
+                android:id="@+id/nick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:text="Обновить"
+        />
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
