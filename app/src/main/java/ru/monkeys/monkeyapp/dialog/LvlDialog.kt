@@ -11,7 +11,7 @@ import android.view.Window
 import kotlinx.android.synthetic.main.lvl_dialog.*
 import ru.monkeys.monkeyapp.R
 
-class LvlDialog: DialogFragment() {
+class LvlDialog : DialogFragment() {
 
     var listener: LvlDialogListener? = null
 
@@ -23,12 +23,23 @@ class LvlDialog: DialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val key = arguments?.getSerializable(KEY_ENUM) as LvlEnum?
+        setText(key)
         cancel.setOnClickListener {
             dismissAllowingStateLoss()
         }
         accept.setOnClickListener {
             listener?.onAcceptClick(arguments?.getSerializable(KEY_ENUM) as LvlEnum?)
             dismissAllowingStateLoss()
+        }
+    }
+
+    private fun setText(key: LvlEnum?) {
+        if (key == null) return
+        title.text = when (key) {
+            LvlEnum.FIRST -> getString(R.string.first_lvl)
+            LvlEnum.SECOND -> getString(R.string.first_lvl)
+            LvlEnum.THIRD -> getString(R.string.third_lvl)
         }
     }
 

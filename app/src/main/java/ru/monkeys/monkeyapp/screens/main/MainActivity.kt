@@ -6,6 +6,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import ru.monkeys.monkeyapp.R
 import ru.monkeys.monkeyapp.dialog.NickNameDialog
 import ru.monkeys.monkeyapp.screens.game.LevelsActivity
+import ru.monkeys.monkeyapp.screens.main.results.ResultsScreen
 import ru.monkeys.monkeyapp.utils.BaseActivity
 
 class MainActivity : BaseActivity() {
@@ -21,7 +22,7 @@ class MainActivity : BaseActivity() {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
         scores.setOnClickListener {
-
+            startActivity(Intent(this, ResultsScreen::class.java))
         }
     }
 

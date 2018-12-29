@@ -35,6 +35,7 @@
     </LinearLayout>
 
     <TextView
+            android:id="@+id/title"
             android:text="Тут должен быть какой то текст, но я его еще не придумал, поэтому будет это :("
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

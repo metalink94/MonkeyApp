@@ -69,6 +69,8 @@
                   android:screenOrientation="landscape"/>
         <activity android:name=".screens.main.SettingsActivity"
                   android:screenOrientation="landscape"/>
+        <activity android:name=".screens.main.results.ResultsScreen"
+                  android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
