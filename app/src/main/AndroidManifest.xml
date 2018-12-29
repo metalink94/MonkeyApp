@@ -71,6 +71,10 @@
                   android:screenOrientation="landscape"/>
         <activity android:name=".screens.main.results.ResultsScreen"
                   android:screenOrientation="landscape"/>
+        <activity android:name=".screens.game.tictactoe.PlayGameWithComputer"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".screens.game.tictactoe.SeriesResult"
+                  android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import ru.monkeys.monkeyapp.R
 import ru.monkeys.monkeyapp.dialog.LvlDialog
 import ru.monkeys.monkeyapp.dialog.LvlDialogListener
 import ru.monkeys.monkeyapp.dialog.LvlEnum
+import ru.monkeys.monkeyapp.screens.game.tictactoe.PlayGameWithComputer
 import ru.monkeys.monkeyapp.utils.BaseActivity
 
 class LevelsActivity : BaseActivity(), LvlDialogListener {
@@ -34,7 +35,7 @@ class LevelsActivity : BaseActivity(), LvlDialogListener {
     override fun onAcceptClick(lvlEnum: LvlEnum?) {
         when (lvlEnum) {
             LvlEnum.FIRST -> startActivity(Intent(this, LvlOneActivity::class.java))
-            LvlEnum.SECOND -> startActivity(Intent(this, LvlTwoActivity::class.java))
+            LvlEnum.SECOND -> startActivity(Intent(this, PlayGameWithComputer::class.java))
             LvlEnum.THIRD -> startActivity(Intent(this, LvlThreeActivity::class.java))
         }
     }
