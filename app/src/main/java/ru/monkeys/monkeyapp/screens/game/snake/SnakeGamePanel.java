@@ -10,14 +10,16 @@ import ru.monkeys.monkeyapp.engine.AbstractGamePanel;
 
 public class SnakeGamePanel extends AbstractGamePanel {
 
-    public SnakeGamePanel(Context context) {
+    public SnakeGamePanel(Context context, SnakeListener snakeListener) {
         super(context);
+        listener = snakeListener;
     }
 
     private SnakeActor snake;
     private AppleActor apple;
     private ScoreBoard score;
     private boolean isPaused = false;
+    private SnakeListener listener;
 
     @Override
     public void onStart() {
@@ -64,6 +66,12 @@ public class SnakeGamePanel extends AbstractGamePanel {
         if (keyCode == KeyEvent.KEYCODE_P) {
             isPaused = !isPaused;
         }
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            stopGame();
+            if (listener != null) {
+                listener.onBackPressed();
+            }
+        }
         return true;
     }
 
@@ -76,4 +84,7 @@ public class SnakeGamePanel extends AbstractGamePanel {
         return false;
     }
 
+    public void stopGame() {
+        stopGameLoop();
+    }
 }

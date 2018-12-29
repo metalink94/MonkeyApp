@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@drawable/rectangle_white">
@@ -15,22 +15,22 @@
                 android:id="@+id/poor"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"/>
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/ic_star"/>
 
         <ImageView
                 android:id="@+id/nice"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"/>
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/ic_star"/>
 
         <ImageView
                 android:id="@+id/perfect"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"/>
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/ic_star"/>
 
     </LinearLayout>
 
