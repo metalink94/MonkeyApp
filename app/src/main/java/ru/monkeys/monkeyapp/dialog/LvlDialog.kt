@@ -38,7 +38,7 @@ class LvlDialog : DialogFragment() {
         if (key == null) return
         title.text = when (key) {
             LvlEnum.FIRST -> getString(R.string.first_lvl)
-            LvlEnum.SECOND -> getString(R.string.first_lvl)
+            LvlEnum.SECOND -> getString(R.string.second_lvl)
             LvlEnum.THIRD -> getString(R.string.third_lvl)
         }
     }

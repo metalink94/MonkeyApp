@@ -46,4 +46,5 @@
     <string name="default_min_games">1</string>
     <string name="x_turn">\'s turn (X)</string>
     <string name="o_turn">\'s turn (O)</string>
+    <string name="second_lvl">Хорошо ли у вас с логикой, попоробуй обыграть обезьянку Мими в крестики нолики</string>
 </resources>
