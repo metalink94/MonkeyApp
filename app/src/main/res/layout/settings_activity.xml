@@ -26,6 +26,7 @@ android:background="@drawable/main_bg">
                     android:layout_height="wrap_content"/>
 
             <TextView
+                    android:id="@+id/levelChange"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
@@ -41,6 +42,7 @@ android:background="@drawable/main_bg">
                     android:layout_marginTop="16dp">
 
                 <TextView
+                        android:id="@+id/light"
                         style="@style/AcceptButton"
                         android:layout_weight="1"
                         android:layout_width="0dp" android:layout_height="wrap_content"
@@ -52,6 +54,7 @@ android:background="@drawable/main_bg">
                 <View android:layout_width="16dp" android:layout_height="wrap_content"/>
 
                 <TextView
+                        android:id="@+id/middle"
                         style="@style/ButtonStyle"
                         android:layout_weight="1"
                         android:layout_width="0dp" android:layout_height="wrap_content"
@@ -63,6 +66,7 @@ android:background="@drawable/main_bg">
                 <View android:layout_width="16dp" android:layout_height="wrap_content"/>
 
                 <TextView
+                        android:id="@+id/hard"
                         style="@style/RejectButton"
                         android:layout_weight="1"
                         android:layout_width="0dp" android:layout_height="wrap_content"

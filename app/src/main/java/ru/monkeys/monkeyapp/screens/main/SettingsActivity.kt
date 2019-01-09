@@ -12,6 +12,7 @@ class SettingsActivity: BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings_activity)
         val nickname = sharedPreferences.getString(NICKNAME, "") ?: ""
+        val level = sharedPreferences.getString(LEVEL, "средний") ?: "средний"
         nick.setText(nickname)
         nick.setSelection(nickname.length)
         refresh.setOnClickListener {
@@ -22,5 +23,23 @@ class SettingsActivity: BaseActivity() {
                 Toast.makeText(this, "Никнейм обновлён!", Toast.LENGTH_LONG).show()
             }
         }
+        levelChange.text = String.format("Поменять сложность: с $level")
+        light.setOnClickListener {
+            Toast.makeText(this, "Установлен лёгкий уровень сложности", Toast.LENGTH_LONG).show()
+            updateLevel("лёгкий")
+        }
+        middle.setOnClickListener {
+            Toast.makeText(this, "Установлен средний уровень сложности", Toast.LENGTH_LONG).show()
+            updateLevel("средний")
+        }
+        hard.setOnClickListener {
+            Toast.makeText(this, "Установлен высокий уровень сложности", Toast.LENGTH_LONG).show()
+            updateLevel("высокий")
+        }
+    }
+
+    private fun updateLevel(levelName: String) {
+        sharedPreferences.edit().putString(LEVEL, levelName).apply()
+        levelChange.text = String.format("Поменять сложность: с $levelName")
     }
 }

@@ -16,10 +16,10 @@ class LevelsActivity : BaseActivity(), LvlDialogListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.levels_activity)
         lvlOne.setOnClickListener {
-            showDialog(LvlEnum.FIRST)
+            showDialog(LvlEnum.SECOND)
         }
         lvlTwo.setOnClickListener {
-            showDialog(LvlEnum.SECOND)
+            showDialog(LvlEnum.FIRST)
         }
         lvlThree.setOnClickListener {
             showDialog(LvlEnum.THIRD)

@@ -10,6 +10,7 @@ open class BaseActivity: AppCompatActivity() {
     companion object {
         const val APP_PREFERENCES = "mysettings"
         const val NICKNAME = "nickname"
+        const val LEVEL = "level"
     }
 
 
