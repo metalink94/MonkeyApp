@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">Золотой царь Лев</string>
-    <string name="facebook_app_id">267853527245740</string>
-    <string name="fb_login_protocol_scheme">fb267853527245740</string>
+    <string name="app_name">Хакуна Матата</string>
+    <string name="facebook_app_id">358161978329018</string>
     <string name="congr">Поздравляем!</string>
     <string name="congr_mess">Вы показали удивительную интуицую в нашей игре и победили. Проверьте её ещё раз, нажав
         кнопку \"заново\"!
