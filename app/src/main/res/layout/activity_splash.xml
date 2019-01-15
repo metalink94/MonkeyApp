@@ -9,7 +9,7 @@
             android:id="@+id/icon"
             android:layout_width="256dp"
             android:layout_height="256dp"
-            android:src="@drawable/monkey_2"
+            android:src="@drawable/monkey"
             android:layout_centerInParent="true"/>
 
 </RelativeLayout>

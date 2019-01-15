@@ -12,6 +12,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import ru.monkeys.monkeyapp.BuildConfig
 import ru.monkeys.monkeyapp.R
 import ru.monkeys.monkeyapp.screens.web.WebViewActivity
 import ru.monkeys.monkeyapp.utils.BaseActivity
@@ -31,14 +32,14 @@ class SplashActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-//        getHashKey()
+        getHashKey()
         checkDatabase(getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE))
     }
 
     private fun getHashKey() {
         try {
             val info = packageManager.getPackageInfo(
-                "ru.monkeys.monkeyapp",
+                BuildConfig.APPLICATION_ID,
                 PackageManager.GET_SIGNATURES
             )
             for (signature in info.signatures) {

@@ -5,12 +5,20 @@
                 android:background="@drawable/lvl_bg">
 
     <ImageView
+            android:layout_width="80dp"
+            android:layout_height="128dp"
+            android:layout_marginBottom="24dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/monkey_3"/>
+
+    <ImageView
             android:id="@+id/lvlOne"
             android:layout_width="48dp"
             android:layout_height="48dp"
             app:srcCompat="@drawable/ic_level"
             android:layout_marginLeft="48dp"
-            android:layout_marginTop="32dp"/>
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="164dp"/>
 
     <ImageView
             android:id="@+id/lvlTwo"
@@ -19,7 +27,7 @@
             android:layout_height="48dp"
             app:srcCompat="@drawable/ic_level"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="100dp"
+            android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/lvlOne"
             android:layout_marginStart="120dp"/>
 
